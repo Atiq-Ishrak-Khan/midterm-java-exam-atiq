@@ -9,26 +9,40 @@ as programing language. The programing language is converted to machine language
 
 
 What jdk contains or composed of and define each components?
-A.
-
-
-
+A.JDK means Java Development Kit and it provides all the necessary tools such as compiler, library etc. JDK is composed of bunch of things. They are mentioned
+as following:-
+Compiler: Compiler is the thing that converts Java source code (human readable) into byte code. This is a low level representation which can be executed by
+JVM (Java Virtual Machine).
+JVM: JVM means Java Virtual Machine. This one execute bytecode and it's in the runtime environment.
+Library: This is basically java standard library which contains some important tools specially for the developer such as ArrayList, HashMap, I/O operations etc.
+JRE: JRE means Java Runtime Environment. This actually includes JVM and a set of libraries and the class files that are necessary for running Java applications.
+Development tools: Besides JDK, the development tools contains other tools like JavaDoc, debugger etc for managing Java applications.
+API Documentation: This actually provides details information about classes and methods available in the standard Java Library.
 
 
 What is IDE?
-A.
-
-
+A. IDE means Integrated Development Environment. This includes code editor, compiler, debugger, project management and other tools. It help the developer to develop
+the product more efficiently.
 
 What are the IDEs available in the market to support java?
-A.
-
-
+A. There are lots of IDEs available in the market to support java. Some of them are IntelliJ IDEA, Eclipse, BlueJ, Net Beans etc.
 
 Explain the entire java life cycle.
+A. The java life cycle starts with the code editor which is basically the IDE where we write our programing language. This is called source code (contains .java extension)
+and this source code is compiled into byte code using the Java Compiler (javac). The converted byte code has ".class" extension. This phase is called compiling environment.
+And this byte code goes through JVM before converted into machine code. Inside JVM, there are Java Interpreter and Just-in-time compiler which helps to convert that
+into machine language. This phase is called run-time environment.
+
+
 what is class?
+A. Class is the blueprint.
+
 What is object?
+A. Object is the instance of a class.
+
 What is the entry point of an application?
+A. The main method is the entry point of the application. (public static void main (String[] args)).
+
 Why main is static?
 Which class is the superclass of all classes?
 What is difference between path and classpath variables?
