@@ -44,6 +44,7 @@ What is the entry point of an application?
 A. The main method is the entry point of the application. (public static void main (String[] args)).
 
 Why main is static?
+
 Which class is the superclass of all classes?
 What is difference between path and classpath variables?
 What is the difference between an Interface and Abstract class?
