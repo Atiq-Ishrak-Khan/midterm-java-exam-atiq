@@ -12,7 +12,29 @@ public class PrimeNumber {
 		 * Use any databases[MySql] to store data and retrieve data.
 		 *
 		 */
-
+		int count = countPrimes(2, 1000000);
+		System.out.println("Number of prime numbers between 2 and 1 million: " + count);
 	}
 
+	public static int countPrimes(int start, int end) {
+		int count = 0;
+		for (int num = start; num <= end; num++) {
+			if (isPrime(num)) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	public static boolean isPrime(int num) {
+		if (num <= 1) {
+			return false;
+		}
+		for (int i = 2; i * i <= num; i++) {
+			if (num % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
 }

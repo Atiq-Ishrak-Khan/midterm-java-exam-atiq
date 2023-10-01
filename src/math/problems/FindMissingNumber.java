@@ -10,6 +10,22 @@ public class FindMissingNumber {
          */
          int [] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
 
+        int n = 10; // Assuming the range is from 1 to 10
+
+        int missingNumber = findMissingNumber(array, n);
+        System.out.println("The missing number is: " + missingNumber);
+    }
+
+    public static int findMissingNumber(int[] array, int n) {
+        int totalSum = n * (n + 1) / 2;
+        int arraySum = 0;
+
+        for (int num : array) {
+            arraySum += num;
+        }
+
+        return totalSum - arraySum;
+
     }
 
 }
