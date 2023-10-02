@@ -28,7 +28,7 @@ public class Numbers {
 		algo.selectionSort(num);
 		long selectionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
-        connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
+        connectToSqlDB.insertDataFromArrayToSqlTable("selection_sort", "SortingNumbers");
         List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
         printValue(numbers);
 		int n = num.length;
@@ -45,7 +45,7 @@ public class Numbers {
 		algo.bubbleSort(num);
 		long bubbleSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
-		connectToSqlDB.insertDataFromArrayToSqlTable(num, "bubble_sort", "SortingNumbers");
+		connectToSqlDB.insertDataFromArrayToSqlTable("bubble_sort", "SortingNumbers");
 		numbers = connectToSqlDB.readDataBase("bubble_sort", "SortingNumbers");
 		printValue(numbers);
 
@@ -59,7 +59,7 @@ public class Numbers {
 		algo.mergeSort(num, 0, num.length - 1);
 		long mergeSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Merge Sort take: " + mergeSortExecutionTime + " milli sec");
-		connectToSqlDB.insertDataFromArrayToSqlTable(num, "merge_sort", "SortingNumbers");
+		connectToSqlDB.insertDataFromArrayToSqlTable("merge_sort", "SortingNumbers");
 		numbers = connectToSqlDB.readDataBase("merge_sort", "SortingNumbers");
 		printValue(numbers);
 

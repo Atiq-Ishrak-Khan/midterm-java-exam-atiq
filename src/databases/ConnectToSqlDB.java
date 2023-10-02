@@ -77,7 +77,7 @@ public class ConnectToSqlDB {
         return dataList;
     }
 
-    public void insertDataFromArrayToSqlTable(int [] ArrayData, String tableName, String columnName)
+    public void insertDataFromArrayToSqlTable(String tableName, String columnName)
     {
         try {
             connectToSqlDatabase();
@@ -85,7 +85,8 @@ public class ConnectToSqlDB {
             ps.executeUpdate();
             ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`ID` int(11) NOT NULL AUTO_INCREMENT,`"+columnName+"` bigint(20) DEFAULT NULL,  PRIMARY KEY (`ID`) );");
             ps.executeUpdate();
-            for(int n=0; n<ArrayData.length; n++){
+            int[] ArrayData = new int[0];
+            for(int n = 0; n<ArrayData.length; n++){
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
                 ps.setInt(1,ArrayData[n]);
                 ps.executeUpdate();
@@ -137,10 +138,10 @@ public class ConnectToSqlDB {
     {
         try {
             connectToSqlDatabase();
-                ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
-                ps.setString(1,"Ankita Sing");
-                ps.setInt(2,3590);
-                ps.executeUpdate();
+            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
+            ps.setString(1,"Ankita Sing");
+            ps.setInt(2,3590);
+            ps.executeUpdate();
 
 
         } catch (IOException e) {
@@ -181,9 +182,9 @@ public class ConnectToSqlDB {
         return list;
     }
 
-//    public static void main(String[] args) throws Exception {
-//        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-//        int[] array = {123,456,789};
-//        connectToSqlDB.insertDataFromArrayToSqlTable(array, "phonemumbers", "number1");
-//    }
+    public static void main(String[] args) throws Exception {
+        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+        int[] array = {123,456,789};
+        connectToSqlDB.insertDataFromArrayToSqlTable("Movies", "Director");
+    }
 }
