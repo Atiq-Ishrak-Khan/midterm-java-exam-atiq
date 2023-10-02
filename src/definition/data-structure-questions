@@ -1,39 +1,122 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
-
+A. Data structures are essential for efficient data organization, storage, and retrieval in computer programs, enabling
+better performance, abstraction, and problem-solving.
 
 What are the various operations that can be performed on different Data Structures?
+A.Operations on data structures include insertion, deletion, search, traversal, sorting, and accessing elements, among
+others, depending on the specific data structure.
+
 List out the areas in which data structures are applied extensively?
+A. Data structures are applied extensively in areas such as databases, algorithms, operating systems, compilers, and
+artificial intelligence.
+
 what is an Array?
+A. An array is a data structure that stores a collection of elements of the same data type in contiguous memory
+locations, accessible by an index or position.
+
 what is the difference between the Array and ArrayList?
+A. An array has a fixed size, while an ArrayList in many programming languages, such as Java, can dynamically resize
+to accommodate more elements as needed.
+
 what is LinkedList?
+A. A LinkedList is a data structure that consists of a sequence of elements where each element points to the next one,
+forming a chain-like structure.
+
 How is an Array different from Linked List?
+A. An array stores elements in contiguous memory locations with a fixed size, while a linked list stores elements in
+nodes connected by pointers and can dynamically resize.
+
 what is queue?
+A. In Java, a Queue is a linear data structure that follows the FIFO (First-In-First-Out) principle, used for storing
+and managing elements with enqueue (add) and dequeue (remove) operations.
+
 what is stack?
+A. In Java, a Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle, used for storing and
+managing elements with push (add) and pop (remove) operations.
+
 what is FIFO and LIFO?
+A. FIFO is First In FIrst Out and LIFO is Last In First Out.
+
 what is the order of complexity?
+A. Order of complexity, often referred to as time complexity, measures the growth rate of an algorithm's execution time
+as a function of its input size. It helps analyze how an algorithm's performance scales with larger inputs.
+
 what is the best case to search an element from an array?
+A. The best-case time to search for an element in an array is O(1), which means constant time, when the element is found
+at the very beginning (first element) of the array.
+
 what is the worst case to search an element from an array?
+A. The worst-case time to search for an element in an array is O(n), where "n" is the number of elements in the array.
+This occurs when the element is not present in the array or is located at the very end.
+
 what is tree in data structure?
+A. A tree in data structure is a hierarchical data structure consisting of nodes connected by edges, organized in a
+branching structure with a root node and child nodes.
+
 what is graph in data structure?
+A. A graph in data structure is a collection of nodes (vertices) connected by edges, representing relationships between
+pairs of nodes.
+
 what is the difference between the HashTable and HashMap?
+A. HashTable is synchronized and thread-safe, while HashMap is not synchronized and not thread-safe.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A. RDBMS: Tables, Indexes. Network Data Model: Graphs. Hierarchical Data Model: Trees.
+
 How HashMap works in java?
+A. HashMap in Java uses a hash function to map keys to bucket indices, allowing for efficient key-value pair retrieval.
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A. This is a runtime exception in Java that occurs when attempting to access an array element using an invalid index,
+typically when the index is negative or greater than or equal to the array's length.
+
 What are the different ways of copying an array into another array?
+A. We can copy an array into another array in Java using methods like System.arraycopy(), a loop, or Arrays.copyOf().
+
 What is difference between an array and a linked list?
+A. An array stores elements in contiguous memory with a fixed size, while a linked list stores elements in nodes
+connected by pointers and can dynamically resize.
+
 What is DFS and BFS?
+A. DFS (Depth-First Search) and BFS (Breadth-First Search) are two common graph traversal algorithms. DFS explores as
+far as possible along each branch before backtracking. BFS explores all neighbor nodes at the current depth before
+moving to the next level.
+
 What is Recursion?
+A. Recursion is a programming technique where a function calls itself to solve a problem in smaller, similar instances.
+
 What are linear and non linear data Structures?
+A. In linear data Structures, elements are arranged sequentially, like in arrays and linked lists. In non linear data
+Structures, elements are not arranged sequentially, like in trees and graphs.
+
 What is Big-(O)-annotation?
+A. Big O notation is used to describe the upper bound of the time complexity of an algorithm in terms of its input size.
+
 Outlined different kind of sorting algorithm with time complexity?
+A. Bubble Sort: O(n^2).
+Insertion Sort: O(n^2)
+Selection Sort: O(n^2)
+Merge Sort: O(n log n)
+Quick Sort: O(n^2) worst-case, O(n log n) average-case
+Heap Sort: O(n log n)
+Radix Sort: O(k * n), where k is the number of digits in the maximum number.
+
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.
   c)In terms of Searching element.
   d)In terms of Removing element.
+
+A. Data structure	      Access	 Search	  Insertion	  Deletion
+   Array	                O(1)	  O(N)	   O(N)	       O(N)
+   Stack	                O(N)	  O(N)	   O(1)	       O(1)
+   Queue	                O(N)	  O(N)	   O(1)	       O(1)
+   Hash Table	            O(1)	  O(1)	   O(1)	       O(1)
+   Singly Linked list	    O(N)	  O(N)	   O(1)	       O(1)
+   Doubly Linked List	    O(N)	  O(N)	   O(1)	       O(1)
+
 
 
