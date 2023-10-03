@@ -20,4 +20,8 @@ public class Palindrome {
             System.out.println(input + " is not a palindrome.");
         }
     }
+
+    public static boolean isPalindrome(String madam) {
+        return isPalindrome(madam);
+    }
 }
